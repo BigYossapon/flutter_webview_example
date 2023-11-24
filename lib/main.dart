@@ -1,9 +1,11 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:webview_flutter/webview_flutter.dart';
+import 'package:webview_flutter_android/webview_flutter_android.dart';
 
 void main() {
   runApp(const MyApp());
@@ -144,7 +146,9 @@ class _WebViewExampleState extends State<WebViewExample> {
   @override
   void initState() {
     super.initState();
-
+    // if (Platform.isAndroid) {
+    //   WebViewWidget.fromPlatform(platform: AndroidView)
+    // }
     _controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
       ..setBackgroundColor(const Color(0x00000000))
@@ -181,11 +185,33 @@ class _WebViewExampleState extends State<WebViewExample> {
         },
       )
       ..setBackgroundColor(Colors.white)
-      ..loadRequest(Uri.parse('https://bigyossapon.github.io'));
-
+      //..loadRequest(Uri.parse('https://bigyossapon.github.io'));
+      ..loadRequest(Uri.parse(
+          'https://demoeworkpermit.onlineasset.co.th/Permit/ViewSection60_2'));
+    addFileSelectionListener();
+// https://demoeworkpermit.onlineasset.co.th/Permit/ViewSection60_2
     WidgetsBinding.instance.addPostFrameCallback((_) =>
         //send data to web
         _controller.runJavaScript('fromFlutter("initial link from flutter")'));
+  }
+
+  void addFileSelectionListener() async {
+    if (Platform.isAndroid) {
+      final androidController =
+          _controller.platform as AndroidWebViewController;
+      await androidController.setOnShowFileSelector(_androidFilePicker);
+    }
+  }
+
+  Future<List<String>> _androidFilePicker(
+      final FileSelectorParams params) async {
+    final result = await FilePicker.platform.pickFiles();
+
+    if (result != null && result.files.single.path != null) {
+      final file = File(result.files.single.path!);
+      return [file.uri.toString()];
+    }
+    return [];
   }
 
   @override
