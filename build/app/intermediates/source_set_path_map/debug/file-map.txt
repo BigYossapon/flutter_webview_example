@@ -1,0 +1,14 @@
+com.example.flutter_webview.app-jetified-window-1.0.0-beta04-0 /Users/it_dev/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/res
+com.example.flutter_webview.app-webkit-1.7.0-1 /Users/it_dev/.gradle/caches/transforms-3/26053599e8c0dac0e11dd421905435f3/transformed/webkit-1.7.0/res
+com.example.flutter_webview.app-jetified-annotation-experimental-1.1.0-2 /Users/it_dev/.gradle/caches/transforms-3/6c0c163cc77ae6c91f9f7dfcd179c29c/transformed/jetified-annotation-experimental-1.1.0/res
+com.example.flutter_webview.app-core-1.6.0-3 /Users/it_dev/.gradle/caches/transforms-3/7e9df2ac2213a6bd3cef0f2f27870d79/transformed/core-1.6.0/res
+com.example.flutter_webview.app-jetified-window-java-1.0.0-beta04-4 /Users/it_dev/.gradle/caches/transforms-3/ae81e06d24c799147c26814497a2a305/transformed/jetified-window-java-1.0.0-beta04/res
+com.example.flutter_webview.app-debug-5 /Users/it_dev/Documents/flutter_webview/android/app/src/debug/res
+com.example.flutter_webview.app-main-6 /Users/it_dev/Documents/flutter_webview/android/app/src/main/res
+com.example.flutter_webview.app-pngs-7 /Users/it_dev/Documents/flutter_webview/build/app/generated/res/pngs/debug
+com.example.flutter_webview.app-resValues-8 /Users/it_dev/Documents/flutter_webview/build/app/generated/res/resValues/debug
+com.example.flutter_webview.app-rs-9 /Users/it_dev/Documents/flutter_webview/build/app/generated/res/rs/debug
+com.example.flutter_webview.app-mergeDebugResources-10 /Users/it_dev/Documents/flutter_webview/build/app/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.example.flutter_webview.app-mergeDebugResources-11 /Users/it_dev/Documents/flutter_webview/build/app/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.example.flutter_webview.app-merged_res-12 /Users/it_dev/Documents/flutter_webview/build/app/intermediates/merged_res/debug
+com.example.flutter_webview.app-packaged_res-13 /Users/it_dev/Documents/flutter_webview/build/webview_flutter_android/intermediates/packaged_res/debug
